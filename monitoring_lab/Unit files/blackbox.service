@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus Server
+After=network-online.target
+
+[Service]
+User=root
+Restart=on-failure
+
+ExecStart=/home/mity/Downloads/blackbox_exporter-0.19.0.linux-amd64/blackbox_exporter --config.file=/home/mity/Downloads/blackbox_exporter-0.19.0.linux-amd64/monitor_website.yml
+
+
+[Install]
+WantedBy=multi-user.target
