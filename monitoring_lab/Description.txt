@@ -1,0 +1,2 @@
+Как сервер для мониторинга был развернут ngin - ip 172.17.50.102
+Для мониторинга был написан unit и использован https://github.com/prometheus/blackbox_exporter
