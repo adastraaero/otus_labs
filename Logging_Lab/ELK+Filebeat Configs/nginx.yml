@@ -1,0 +1,14 @@
+- module: nginx
+  # Access logs
+  access:
+    enabled: true
+    var.paths: ["/var/log/nginx/kibana.access.log*"]
+
+  # Error logs
+  error:
+    enabled: true
+    ingress_controller:
+      enabled: false
+    var.paths: ["/var/log/nginx/kibana.error.log*"]
+
+
